@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Isochrones</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+    </style>
+</head>
+<body>
+<main>
+    <h1>Zones d'accessibilité en voiture et à pied en Valais - Juin 2024</h1>
+<div>
+    <div style="display: inline ;float: left; min-width: 15%;">
+
+
+        <!-- Select dropdowns for GeoJSON selection -->
+        <h4>Séléctionner un isochrone à afficher : </h4>
+        <div style = "margin : 10px">
+            <span>Valais en voiture depuis : </span>
+            <select id="geojson-select-car">
+                <option value=""></option>
+            </select>
+        </div>
+        <div style = "margin : 10px">
+            <span>Valais à pied depuis : </span>
+            <select id="geojson-select-foot-walking">
+                <option value=""></option>
+            </select>
+        </div>
+        <div style = "margin : 10px">
+            <span>Autre : </span>
+            <select id="geojson-select-other">
+                <option value=""></option>
+            </select>
+        </div>
+
+
+        <h4>Zone couverte en fonctions du temps : </h4>
+        <div style="font-weight: bold;">
+            <div style="padding: 5px; background-color: #80800066; border-color: #808000; border-style: solid;">60 min
+                <div style="padding: 5px; background-color: #00ff0066; border-color: #00ff00; border-style: solid;">45 min
+                    <div style="padding: 5px; background-color: #00800066; border-color: #008000; border-style: solid;">30 min
+                        <div style="padding: 5px; background-color: #ff00ff66; border-color: #ff00ff; border-style: solid;">15 min
+                            <div style="padding: 5px; background-color: #80008066; border-color: #800080; border-style: solid;">10 min
+                                <div style="padding: 5px; background-color: #ff000066; border-color: #ff0000; border-style: solid;">5 min
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
+</div>
+
+    <div id="map" style="height: 1000px;"></div>
+
+</main>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    var map = L.map('map').setView([46.2312, 7.3553], 10);
+
+    // Ajouter des tuiles OpenStreetMap à la carte
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var geojsonLayer;
+    // GeoJSON URLs categorized
+    var geojsonUrls = {
+        'car': {
+            'Sion': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_SION_time_car.geojson',
+            'Monthey': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_MONTHEY_time_car.geojson',
+            'Sierre': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_SIERRE_time_car.geojson',
+            'Martigny': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_MARTIGNY_time_car.geojson',
+            'Brigue-Glis': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_BRIGUE-GLIS_time_car.geojson',
+            'Naters': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_NATERS_time_car.geojson',
+            'Viège': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_VIEGE_time_car.geojson',
+            'Collombey-Muraz': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_COLLOMBEY-MURAZ_time_car.geojson',
+            'Conthey': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_CONTHEY_time_car.geojson',
+            'Mont-Noble': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_MONT-NOBLE_time_car.geojson',
+            'Fully': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_FULLY_time_car.geojson',
+            'Vétroz': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_VETROZ_time_car.geojson',
+            'Riddes': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_RIDDES_time_car.geojson',
+            'Grimisuat': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_GRIMISUAT_time_car.geojson',
+            'Savièse': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_SAVIESE_time_car.geojson',
+            'Leytron': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_LEYTRON_time_car.geojson',
+            'Salgesch': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_SALGESCH_time_car.geojson',
+            'Vionnaz': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_VIONNAZ_time_car.geojson',
+            'Saint-Maurice': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_SAINT-MAURICE_time_car.geojson',
+            'Vouvry': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_VOUVRY_time_car.geojson',
+            'Zermatt': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_ZERMATT_time_car.geojson',
+            'Verbier': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_VERBIER_time_car.geojson',
+            'Saas-Fee': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_SAAS-FEE_time_car.geojson',
+            'Crans-Montana': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_CRANS-MONTANA_time_car.geojson',
+            'Leukerbad': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_LEUKERBAD_time_car.geojson',
+            'Nendaz': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_NENDAZ_time_car.geojson',
+            'Grimentz': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_GRIMENTZ_time_car.geojson',
+            'St-Luc': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_ST-LUC_time_car.geojson',
+            'Champex-Lac': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_CHAMPEX-LAC_time_car.geojson',
+            'Les Diablerets': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_LES-DIABLERETS_time_car.geojson',
+            'Aletsch Arena': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_ALETSCH-ARENA_time_car.geojson',
+            'Saas-Grund': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_SAAS-GRUND_time_car.geojson',
+            'Visperterminen': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_VISPERTERMINEN_time_car.geojson',
+            'Evolène': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_EVOLENE_time_car.geojson',
+            'Ovronnaz': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_OVRONNAZ_time_car.geojson',
+            'Morgins': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_MORGINS_time_car.geojson',
+            'Anzère': 'https://raw.githubusercontent.com/jmottard/geodata/main/v02/isochrone_ANZERE_time_car.geojson'
+        },
+        'foot-walking': {
+            'Vercorin FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_VERCORIN_time_foot-walking.geojson',
+            'Sion FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_SION_time_foot-walking.geojson',
+            'Monthey FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_MONTHEY_time_foot-walking.geojson',
+            'Sierre FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_SIERRE_time_foot-walking.geojson',
+            'Martigny FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_MARTIGNY_time_foot-walking.geojson',
+            'Brigue-Glis FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_BRIGUE-GLIS_time_foot-walking.geojson',
+            'Naters FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_NATERS_time_foot-walking.geojson',
+            'Viège FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_VIEGE_time_foot-walking.geojson',
+            'Collombey-Muraz FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_COLLOMBEY-MURAZ_time_foot-walking.geojson',
+            'Conthey FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_CONTHEY_time_foot-walking.geojson',
+            'Mont-Noble FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_MONT-NOBLE_time_foot-walking.geojson',
+            'Fully FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_FULLY_time_foot-walking.geojson',
+            'Vétroz FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_VETROZ_time_foot-walking.geojson',
+            'Riddes FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_RIDDES_time_foot-walking.geojson',
+            'Grimisuat FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_GRIMISUAT_time_foot-walking.geojson',
+            'Savièse FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_SAVIESE_time_foot-walking.geojson',
+            'Leytron FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_LEYTRON_time_foot-walking.geojson',
+            'Salgesch FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_SALGESCH_time_foot-walking.geojson',
+            'Vionnaz FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_VIONNAZ_time_foot-walking.geojson',
+            'Saint-Maurice FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_SAINT-MAURICE_time_foot-walking.geojson',
+            'Vouvry FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_VOUVRY_time_foot-walking.geojson',
+            'Zermatt FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_ZERMATT_time_foot-walking.geojson',
+            'Verbier FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_VERBIER_time_foot-walking.geojson',
+            'Saas-Fee FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_SAAS-FEE_time_foot-walking.geojson',
+            'Crans-Montana FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_CRANS-MONTANA_time_foot-walking.geojson',
+            'Leukerbad FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_LEUKERBAD_time_foot-walking.geojson',
+            'Nendaz FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_NENDAZ_time_foot-walking.geojson',
+            'Grimentz FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_GRIMENTZ_time_foot-walking.geojson',
+            'St-Luc FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_ST-LUC_time_foot-walking.geojson',
+            'Champex-Lac FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_CHAMPEX-LAC_time_foot-walking.geojson',
+            'Les Diablerets FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_LES-DIABLERETS_time_foot-walking.geojson',
+            'Aletsch Arena FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_ALETSCH-ARENA_time_foot-walking.geojson',
+            'Saas-Grund FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_SAAS-GRUND_time_foot-walking.geojson',
+            'Visperterminen FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_VISPERTERMINEN_time_foot-walking.geojson',
+            'Evolène FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_EVOLENE_time_foot-walking.geojson',
+            'Ovronnaz FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_OVRONNAZ_time_foot-walking.geojson',
+            'Morgins FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_MORGINS_time_foot-walking.geojson',
+            'Anzère FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v04/isochrone_ANZERE_time_foot-walking.geojson'
+        },
+        'other': {
+            'Satigny': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_SATIGNY_time_car.geojson',
+            'Péron': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_PERON_time_car.geojson',
+            'Plan-les-Ouates': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_PLAN-LES-OUATES_time_car.geojson',
+            'Cornavin': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_CORNAVIN_time_car.geojson',
+            'Valserhône': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_VALSERHONE_time_car.geojson',
+            'Satigny FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_SATIGNY_time_foot-walking.geojson',
+            'Péron FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_PERON_time_foot-walking.geojson',
+            'Plan-les-Ouates FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_PLAN-LES-OUATES_time_foot-walking.geojson',
+            'Cornavin FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_CORNAVIN_time_foot-walking.geojson',
+            'Valserhône FW': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_VALSERHONE_time_foot-walking.geojson',
+            'Satigny TP': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_SATIGNY_time_tp.geojson',
+            'Péron TP': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_PERON_time_tp.geojson',
+            'Plan-les-Ouates TP': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_PLAN-LES-OUATES_time_tp.geojson',
+            'Cornavin TP': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_CORNAVIN_time_tp.geojson',
+            'Valserhône TP': 'https://raw.githubusercontent.com/jmottard/geodata/main/v03/isochrone_VALSERHONE_time_tp.geojson'
+        }
+    };
+
+    // Définir un tableau de couleurs prédéfinies
+    var colors = [
+        '#808000',
+        '#00ff00',
+        '#008000',
+        '#ff00ff',
+        '#800080',
+        '#ff0000'
+    ];
+
+    // Function to add GeoJSON layer to the map
+    function addGeoJSONLayer(url) {
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                // Sort the features by the "value" property in descending order
+                data.features.sort((a, b) => b.properties.value - a.properties.value);
+
+                // Filter out non-polygon features for coloring purposes
+                var polygonFeatures = data.features.filter(feature => feature.geometry.type === "Polygon" || feature.geometry.type === "MultiPolygon");
+
+                // Remove the previous GeoJSON layer if it exists
+                if (geojsonLayer) {
+                    map.removeLayer(geojsonLayer);
+                }
+                // Add the new GeoJSON layer to the map with a custom style function
+                geojsonLayer = L.geoJSON(data, {
+                    style: function(feature) {
+                        if (feature.geometry.type === "Polygon") {
+                            // Get the index of the feature in the filtered polygon features
+                            var index = polygonFeatures.indexOf(feature);
+                            // Select the corresponding color from the array of colors
+                            var color = colors[index % colors.length];
+
+                            // Return a style object with the selected color, fill opacity, and weight
+                            return {
+                                fillColor: color,
+                                color: color,
+                                weight: 2, // Adjust the weight as needed
+                                fillOpacity: 0.2 // Adjust the fill opacity as needed (0.0 to 1.0)
+                            };
+                        } else {
+                            // Return a default style for non-polygon features
+                            return {
+                                color: '#000000', // Default color for non-polygon features
+                                weight: 1,
+                                fillOpacity: 0.0
+                            };
+                        }
+                    }
+                }).addTo(map);
+            })
+            .catch(error => {
+                console.error('Error fetching GeoJSON:', error);
+            });
+    }
+
+    // Event listener for select dropdown change
+    document.getElementById('geojson-select-car').addEventListener('change', function(event) {
+        var selectedCity = event.target.value;
+        var selectedUrl = geojsonUrls['car'][selectedCity];
+        if (typeof selectedUrl === "string" && selectedUrl.length != 0) {
+            addGeoJSONLayer(selectedUrl);
+        }
+        // Reset other select elements to their default values
+        document.getElementById('geojson-select-foot-walking').value ="";
+        document.getElementById('geojson-select-other').value = "";
+    });
+
+    document.getElementById('geojson-select-foot-walking').addEventListener('change', function(event) {
+        var selectedCity = event.target.value;
+        var selectedUrl = geojsonUrls['foot-walking'][selectedCity];
+        if (typeof selectedUrl === "string" && selectedUrl.length != 0) {
+            addGeoJSONLayer(selectedUrl);
+        }
+        // Reset other select elements to their default values
+        document.getElementById('geojson-select-car').value ="";
+        document.getElementById('geojson-select-other').value = "";
+    });
+
+    document.getElementById('geojson-select-other').addEventListener('change', function(event) {
+        var selectedCity = event.target.value;
+        var selectedUrl = geojsonUrls['other'][selectedCity];
+        if (typeof selectedUrl === "string" && selectedUrl.length != 0) {
+            addGeoJSONLayer(selectedUrl);
+        }
+
+        // Reset other select elements to their default values
+        document.getElementById('geojson-select-car').value = "";
+        document.getElementById('geojson-select-foot-walking').value ="";
+        
+    });
+
+    // Function to populate the select dropdowns with cities
+    function populateCitySelect() {
+        var carSelect = document.getElementById('geojson-select-car');
+        var footWalkingSelect = document.getElementById('geojson-select-foot-walking');
+        var otherSelect = document.getElementById('geojson-select-other');
+
+        // Populate the select dropdowns with cities
+        for (var category in geojsonUrls) {
+            for (var city in geojsonUrls[category]) {
+                var optionElement = document.createElement('option');
+                optionElement.value = city;
+                optionElement.textContent = city;
+
+                if (category === 'car') {
+                    carSelect.appendChild(optionElement);
+                } else if (category === 'foot-walking') {
+                    footWalkingSelect.appendChild(optionElement);
+                } else if (category === 'other') {
+                    otherSelect.appendChild(optionElement);
+                }
+            }
+        }
+        // Sort the options alphabetically
+        sortSelectOptions(carSelect);
+        sortSelectOptions(footWalkingSelect);
+        //sortSelectOptions(otherSelect);
+
+        // Set the default value (first option) after sorting
+        carSelect.value = "Sion";
+        footWalkingSelect.selectedIndex = 0;
+        otherSelect.selectedIndex = 0;
+
+        // Display the layer of Sion by default
+        addGeoJSONLayer(geojsonUrls['car']['Sion']);
+
+    }
+
+    function sortSelectOptions(selectElement) {
+        var options = Array.from(selectElement.options);
+        options.sort((a, b) => a.text.localeCompare(b.text));
+        selectElement.innerHTML = "";
+        options.forEach(option => selectElement.appendChild(option));
+
+    }
+
+    // Call the populateCitySelect function when the page loads
+    window.onload = function() {
+        populateCitySelect();
+    };
+</script>
+</body>
+</html>
