@@ -56,8 +56,12 @@
                 </div>
             </div>
         </div>
-
-
+        
+        <div style = "margin : 10px">
+            <label>
+                Activer le zoom automatique : <input type="checkbox" id="zoom-checkbox"> 
+            </label>
+        </div>
         
     </div>
 </div>
@@ -67,6 +71,7 @@
 </main>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script>
+    var zoomEnabled = false;
     var map = L.map('map').setView([46.2312, 7.3553], 10);
 
     // Ajouter des tuiles OpenStreetMap à la carte
@@ -226,6 +231,10 @@
                         }
                     }
                 }).addTo(map);
+                // Fit the map view to the bounds of the GeoJSON layer
+                if (zoomEnabled) {
+                    map.fitBounds(geojsonLayer.getBounds());
+                }
             })
             .catch(error => {
                 console.error('Error fetching GeoJSON:', error);
@@ -315,6 +324,7 @@
 
     // Call the populateCitySelect function when the page loads
     window.onload = function() {
+        document.getElementById('zoom-checkbox').checked = false; // Ensure checkbox is unchecked
         populateCitySelect();
     };
 </script>
