@@ -1,0 +1,1045 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sion",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 1,
+        "index_touristique": 13,
+        "nombre habitants": "~34,000",
+        "nombre touristes par an": "~150,000",
+        "nombre nuit\u00e9es par an": "~300,000",
+        "remarque": "Capitale du canton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3606,
+          46.2333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Monthey",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 2,
+        "index_touristique": 21,
+        "nombre habitants": "~18,000",
+        "nombre touristes par an": "~50,000",
+        "nombre nuit\u00e9es par an": "~100,000",
+        "remarque": "Centre industriel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9473,
+          46.2521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sierre",
+        "langue": "Fran\u00e7ais/Allemand",
+        "index_ville": 3,
+        "index_touristique": 22,
+        "nombre habitants": "~17,000",
+        "nombre touristes par an": "~75,000",
+        "nombre nuit\u00e9es par an": "~150,000",
+        "remarque": "Ville bilingue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5355,
+          46.2938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Martigny",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 4,
+        "index_touristique": 12,
+        "nombre habitants": "~18,000",
+        "nombre touristes par an": "~200,000",
+        "nombre nuit\u00e9es par an": "~400,000",
+        "remarque": "Fondation Gianadda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0726,
+          46.1021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brigue-Glis",
+        "langue": "Allemand",
+        "index_ville": 5,
+        "index_touristique": 14,
+        "nombre habitants": "~13,000",
+        "nombre touristes par an": "~100,000",
+        "nombre nuit\u00e9es par an": "~200,000",
+        "remarque": "Ch\u00e2teau de Stockalper"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9833,
+          46.3167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Naters",
+        "langue": "Allemand",
+        "index_ville": 6,
+        "index_touristique": 25,
+        "nombre habitants": "~10,000",
+        "nombre touristes par an": "~60,000",
+        "nombre nuit\u00e9es par an": "~120,000",
+        "remarque": "Proche de Brig-Glis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9858,
+          46.3258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vi\u00e8ge",
+        "langue": "Allemand",
+        "index_ville": 7,
+        "index_touristique": 26,
+        "nombre habitants": "~7,000",
+        "nombre touristes par an": "~50,000",
+        "nombre nuit\u00e9es par an": "~100,000",
+        "remarque": "Vignobles en altitude"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8832,
+          46.2916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Collombey-Muraz",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 8,
+        "index_touristique": 27,
+        "nombre habitants": "~9,000",
+        "nombre touristes par an": "~30,000",
+        "nombre nuit\u00e9es par an": "~60,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9333,
+          46.2667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Conthey",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 9,
+        "index_touristique": 23,
+        "nombre habitants": "~8,000",
+        "nombre touristes par an": "~25,000",
+        "nombre nuit\u00e9es par an": "~50,000",
+        "remarque": "Proche de Sion"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3036,
+          46.2239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fully",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 10,
+        "index_touristique": 24,
+        "nombre habitants": "~8,000",
+        "nombre touristes par an": "~20,000",
+        "nombre nuit\u00e9es par an": "~40,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1136,
+          46.1419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mont-Noble",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 11,
+        "index_touristique": 51,
+        "nombre habitants": "~7,000",
+        "nombre touristes par an": "~15,000",
+        "nombre nuit\u00e9es par an": "~30,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4389,
+          46.2081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Savi\u00e8se",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 12,
+        "index_touristique": 31,
+        "nombre habitants": "~7,000",
+        "nombre touristes par an": "~15,000",
+        "nombre nuit\u00e9es par an": "~30,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3333,
+          46.25
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "V\u00e9troz",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 13,
+        "index_touristique": 32,
+        "nombre habitants": "~6,000",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2797,
+          46.2189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riddes",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 14,
+        "index_touristique": 28,
+        "nombre habitants": "~5,500",
+        "nombre touristes par an": "~15,000",
+        "nombre nuit\u00e9es par an": "~30,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2153,
+          46.1719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grimisuat",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 15,
+        "index_touristique": 29,
+        "nombre habitants": "~3,500",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3861,
+          46.2569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leytron",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 16,
+        "index_touristique": 33,
+        "nombre habitants": "~3,000",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2,
+          46.1833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vouvry",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 17,
+        "index_touristique": 34,
+        "nombre habitants": "~3,500",
+        "nombre touristes par an": "~15,000",
+        "nombre nuit\u00e9es par an": "~30,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8964,
+          46.3364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Troistorrents",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 18,
+        "index_touristique": 35,
+        "nombre habitants": "~4,600",
+        "nombre touristes par an": "~20,000",
+        "nombre nuit\u00e9es par an": "~40,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9149,
+          46.2283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saint-Maurice",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 19,
+        "index_touristique": 36,
+        "nombre habitants": "~4,000",
+        "nombre touristes par an": "~25,000",
+        "nombre nuit\u00e9es par an": "~50,000",
+        "remarque": "Abbaye historique"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.004,
+          46.2179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Val de Bagnes",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 20,
+        "index_touristique": 37,
+        "nombre habitants": "~3,500",
+        "nombre touristes par an": "~30,000",
+        "nombre nuit\u00e9es par an": "~60,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2167,
+          46.0804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salquenen (Salgesch)",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 21,
+        "index_touristique": 38,
+        "nombre habitants": "~2,500",
+        "nombre touristes par an": "~15,000",
+        "nombre nuit\u00e9es par an": "~30,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5667,
+          46.3111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crans-Montana",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 22,
+        "index_touristique": 3,
+        "nombre habitants": "~10,000",
+        "nombre touristes par an": "~300,000",
+        "nombre nuit\u00e9es par an": "~600,000",
+        "remarque": "Station de ski et de golf de luxe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4815,
+          46.3112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leukerbad",
+        "langue": "Allemand",
+        "index_ville": 23,
+        "index_touristique": 5,
+        "nombre habitants": "~1,400",
+        "nombre touristes par an": "~100,000",
+        "nombre nuit\u00e9es par an": "~200,000",
+        "remarque": "Stations thermales"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6263,
+          46.3796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Orsi\u00e8res",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 24,
+        "index_touristique": 39,
+        "nombre habitants": "~3,000",
+        "nombre touristes par an": "~20,000",
+        "nombre nuit\u00e9es par an": "~40,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1456,
+          46.0311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saxon",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 25,
+        "index_touristique": 40,
+        "nombre habitants": "~6,000",
+        "nombre touristes par an": "~25,000",
+        "nombre nuit\u00e9es par an": "~50,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1713,
+          46.1489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vex",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 26,
+        "index_touristique": 41,
+        "nombre habitants": "~2,000",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3864,
+          46.2131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Evol\u00e8ne",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 27,
+        "index_touristique": 17,
+        "nombre habitants": "~1,600",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": "Village pittoresque"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4974,
+          46.112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aigle",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 28,
+        "index_touristique": 52,
+        "nombre habitants": "~9,500",
+        "nombre touristes par an": "~50,000",
+        "nombre nuit\u00e9es par an": "~100,000",
+        "remarque": "En partie dans le canton de Vaud"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9683,
+          46.3162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zermatt",
+        "langue": "Allemand",
+        "index_ville": 29,
+        "index_touristique": 1,
+        "nombre habitants": "~5,800",
+        "nombre touristes par an": "~2,000,000",
+        "nombre nuit\u00e9es par an": "~4,000,000",
+        "remarque": "Station de ski, Cervin (Matterhorn)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7539,
+          46.02899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Verbier",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 30,
+        "index_touristique": 2,
+        "nombre habitants": "~3,000",
+        "nombre touristes par an": "~800,000",
+        "nombre nuit\u00e9es par an": "~1,600,000",
+        "remarque": "Station de ski de renomm\u00e9e mondiale"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2269,
+          46.0961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saas-Fee",
+        "langue": "Allemand",
+        "index_ville": 31,
+        "index_touristique": 4,
+        "nombre habitants": "~1,600",
+        "nombre touristes par an": "~300,000",
+        "nombre nuit\u00e9es par an": "~600,000",
+        "remarque": "Station de ski, paysages glaciaires"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9299,
+          46.1085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grimentz",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 32,
+        "index_touristique": 7,
+        "nombre habitants": "~500",
+        "nombre touristes par an": "~50,000",
+        "nombre nuit\u00e9es par an": "~100,000",
+        "remarque": "Village alpin traditionnel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.573,
+          46.1808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St-Luc",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 33,
+        "index_touristique": 8,
+        "nombre habitants": "~350",
+        "nombre touristes par an": "~20,000",
+        "nombre nuit\u00e9es par an": "~40,000",
+        "remarque": "Observatoire astronomique, ski"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6094,
+          46.2204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Champex-Lac",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 34,
+        "index_touristique": 9,
+        "nombre habitants": "~200",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": "Village alpin, activit\u00e9s nautiques"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1158,
+          46.0323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Les Diablerets",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 35,
+        "index_touristique": 10,
+        "nombre habitants": "~1,200",
+        "nombre touristes par an": "~100,000",
+        "nombre nuit\u00e9es par an": "~200,000",
+        "remarque": "Glacier 3000, ski en \u00e9t\u00e9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1513,
+          46.349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Raron",
+        "langue": "Allemand",
+        "index_ville": 36,
+        "index_touristique": 42,
+        "nombre habitants": "~2,400",
+        "nombre touristes par an": "~15,000",
+        "nombre nuit\u00e9es par an": "~30,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8,
+          46.3033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ernen",
+        "langue": "Allemand",
+        "index_ville": 37,
+        "index_touristique": 43,
+        "nombre habitants": "~500",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.15,
+          46.4
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "M\u00f6rel-Filet",
+        "langue": "Allemand",
+        "index_ville": 38,
+        "index_touristique": 44,
+        "nombre habitants": "~1,100",
+        "nombre touristes par an": "~15,000",
+        "nombre nuit\u00e9es par an": "~30,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0336,
+          46.3578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nendaz",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 39,
+        "index_touristique": 6,
+        "nombre habitants": "~6,500",
+        "nombre touristes par an": "~150,000",
+        "nombre nuit\u00e9es par an": "~300,000",
+        "remarque": "Domaine skiable des 4 Vall\u00e9es"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2944,
+          46.1823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fiesch",
+        "langue": "Allemand",
+        "index_ville": 40,
+        "index_touristique": 45,
+        "nombre habitants": "~1,000",
+        "nombre touristes par an": "~20,000",
+        "nombre nuit\u00e9es par an": "~40,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.14,
+          46.4046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bettmeralp",
+        "langue": "Allemand",
+        "index_ville": 41,
+        "index_touristique": 46,
+        "nombre habitants": "~400",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0642,
+          46.3836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riederalp",
+        "langue": "Allemand",
+        "index_ville": 42,
+        "index_touristique": 47,
+        "nombre habitants": "~500",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0243,
+          46.381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Goms",
+        "langue": "Allemand",
+        "index_ville": 43,
+        "index_touristique": 48,
+        "nombre habitants": "~1,200",
+        "nombre touristes par an": "~20,000",
+        "nombre nuit\u00e9es par an": "~40,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2833,
+          46.4667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Obergoms",
+        "langue": "Allemand",
+        "index_ville": 44,
+        "index_touristique": 49,
+        "nombre habitants": "~700",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.335,
+          46.5244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "M\u00fcnster-Geschinen",
+        "langue": "Allemand",
+        "index_ville": 45,
+        "index_touristique": 50,
+        "nombre habitants": "~1,200",
+        "nombre touristes par an": "~15,000",
+        "nombre nuit\u00e9es par an": "~30,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2667,
+          46.5
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saas-Grund",
+        "langue": "Allemand",
+        "index_ville": 46,
+        "index_touristique": 15,
+        "nombre habitants": "~1,000",
+        "nombre touristes par an": "~100,000",
+        "nombre nuit\u00e9es par an": "~200,000",
+        "remarque": "Randonn\u00e9es, excursions en montagne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9387,
+          46.1221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Visperterminen",
+        "langue": "Allemand",
+        "index_ville": 47,
+        "index_touristique": 16,
+        "nombre habitants": "~1,400",
+        "nombre touristes par an": "~20,000",
+        "nombre nuit\u00e9es par an": "~40,000",
+        "remarque": "Vignobles les plus \u00e9lev\u00e9s d'Europe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8814,
+          46.2947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vionnaz",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 48,
+        "index_touristique": 30,
+        "nombre habitants": "~2,500",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": NaN
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9008,
+          46.3096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anz\u00e8re",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 49,
+        "index_touristique": 20,
+        "nombre habitants": "~800",
+        "nombre touristes par an": "~20,000",
+        "nombre nuit\u00e9es par an": "~40,000",
+        "remarque": "Station de ski, bains thermaux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.401,
+          46.2964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Morgins",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 50,
+        "index_touristique": 19,
+        "nombre habitants": "~700",
+        "nombre touristes par an": "~10,000",
+        "nombre nuit\u00e9es par an": "~20,000",
+        "remarque": "Domaine skiable des Portes du Soleil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.8664,
+          46.2383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ovronnaz",
+        "langue": "Fran\u00e7ais",
+        "index_ville": 51,
+        "index_touristique": 18,
+        "nombre habitants": "~900",
+        "nombre touristes par an": "~20,000",
+        "nombre nuit\u00e9es par an": "~40,000",
+        "remarque": "Station thermale et de ski"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1732,
+          46.2021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aletsch Arena",
+        "langue": "Allemand",
+        "index_ville": 52,
+        "index_touristique": 11,
+        "nombre habitants": "~2,400",
+        "nombre touristes par an": "~200,000",
+        "nombre nuit\u00e9es par an": "~400,000",
+        "remarque": "Villages de Riederalp, Bettmeralp, Fiesch, glacier d'Aletsch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.05,
+          46.3689
+        ]
+      }
+    }
+  ]
+}
