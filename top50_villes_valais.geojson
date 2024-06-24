@@ -10,8 +10,7 @@
         "index_touristique": 13,
         "nombre habitants": "~34,000",
         "nombre touristes par an": "~150,000",
-        "nombre nuit\u00e9es par an": "~300,000",
-        "remarque": "Capitale du canton"
+        "nombre nuit\u00e9es par an": "~300,000"
       },
       "geometry": {
         "type": "Point",
@@ -30,8 +29,7 @@
         "index_touristique": 21,
         "nombre habitants": "~18,000",
         "nombre touristes par an": "~50,000",
-        "nombre nuit\u00e9es par an": "~100,000",
-        "remarque": "Centre industriel"
+        "nombre nuit\u00e9es par an": "~100,000"
       },
       "geometry": {
         "type": "Point",
@@ -50,8 +48,7 @@
         "index_touristique": 22,
         "nombre habitants": "~17,000",
         "nombre touristes par an": "~75,000",
-        "nombre nuit\u00e9es par an": "~150,000",
-        "remarque": "Ville bilingue"
+        "nombre nuit\u00e9es par an": "~150,000"
       },
       "geometry": {
         "type": "Point",
@@ -70,8 +67,7 @@
         "index_touristique": 12,
         "nombre habitants": "~18,000",
         "nombre touristes par an": "~200,000",
-        "nombre nuit\u00e9es par an": "~400,000",
-        "remarque": "Fondation Gianadda"
+        "nombre nuit\u00e9es par an": "~400,000"
       },
       "geometry": {
         "type": "Point",
@@ -90,8 +86,7 @@
         "index_touristique": 14,
         "nombre habitants": "~13,000",
         "nombre touristes par an": "~100,000",
-        "nombre nuit\u00e9es par an": "~200,000",
-        "remarque": "Ch\u00e2teau de Stockalper"
+        "nombre nuit\u00e9es par an": "~200,000"
       },
       "geometry": {
         "type": "Point",
@@ -110,8 +105,7 @@
         "index_touristique": 25,
         "nombre habitants": "~10,000",
         "nombre touristes par an": "~60,000",
-        "nombre nuit\u00e9es par an": "~120,000",
-        "remarque": "Proche de Brig-Glis"
+        "nombre nuit\u00e9es par an": "~120,000"
       },
       "geometry": {
         "type": "Point",
@@ -130,8 +124,7 @@
         "index_touristique": 26,
         "nombre habitants": "~7,000",
         "nombre touristes par an": "~50,000",
-        "nombre nuit\u00e9es par an": "~100,000",
-        "remarque": "Vignobles en altitude"
+        "nombre nuit\u00e9es par an": "~100,000"
       },
       "geometry": {
         "type": "Point",
@@ -150,8 +143,7 @@
         "index_touristique": 27,
         "nombre habitants": "~9,000",
         "nombre touristes par an": "~30,000",
-        "nombre nuit\u00e9es par an": "~60,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~60,000"
       },
       "geometry": {
         "type": "Point",
@@ -170,8 +162,7 @@
         "index_touristique": 23,
         "nombre habitants": "~8,000",
         "nombre touristes par an": "~25,000",
-        "nombre nuit\u00e9es par an": "~50,000",
-        "remarque": "Proche de Sion"
+        "nombre nuit\u00e9es par an": "~50,000"
       },
       "geometry": {
         "type": "Point",
@@ -190,8 +181,7 @@
         "index_touristique": 24,
         "nombre habitants": "~8,000",
         "nombre touristes par an": "~20,000",
-        "nombre nuit\u00e9es par an": "~40,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~40,000"
       },
       "geometry": {
         "type": "Point",
@@ -210,8 +200,7 @@
         "index_touristique": 51,
         "nombre habitants": "~7,000",
         "nombre touristes par an": "~15,000",
-        "nombre nuit\u00e9es par an": "~30,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~30,000"
       },
       "geometry": {
         "type": "Point",
@@ -230,8 +219,7 @@
         "index_touristique": 31,
         "nombre habitants": "~7,000",
         "nombre touristes par an": "~15,000",
-        "nombre nuit\u00e9es par an": "~30,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~30,000"
       },
       "geometry": {
         "type": "Point",
@@ -250,8 +238,7 @@
         "index_touristique": 32,
         "nombre habitants": "~6,000",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -270,8 +257,7 @@
         "index_touristique": 28,
         "nombre habitants": "~5,500",
         "nombre touristes par an": "~15,000",
-        "nombre nuit\u00e9es par an": "~30,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~30,000"
       },
       "geometry": {
         "type": "Point",
@@ -290,8 +276,7 @@
         "index_touristique": 29,
         "nombre habitants": "~3,500",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -310,8 +295,7 @@
         "index_touristique": 33,
         "nombre habitants": "~3,000",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -330,8 +314,7 @@
         "index_touristique": 34,
         "nombre habitants": "~3,500",
         "nombre touristes par an": "~15,000",
-        "nombre nuit\u00e9es par an": "~30,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~30,000"
       },
       "geometry": {
         "type": "Point",
@@ -350,8 +333,7 @@
         "index_touristique": 35,
         "nombre habitants": "~4,600",
         "nombre touristes par an": "~20,000",
-        "nombre nuit\u00e9es par an": "~40,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~40,000"
       },
       "geometry": {
         "type": "Point",
@@ -370,8 +352,7 @@
         "index_touristique": 36,
         "nombre habitants": "~4,000",
         "nombre touristes par an": "~25,000",
-        "nombre nuit\u00e9es par an": "~50,000",
-        "remarque": "Abbaye historique"
+        "nombre nuit\u00e9es par an": "~50,000"
       },
       "geometry": {
         "type": "Point",
@@ -390,8 +371,7 @@
         "index_touristique": 37,
         "nombre habitants": "~3,500",
         "nombre touristes par an": "~30,000",
-        "nombre nuit\u00e9es par an": "~60,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~60,000"
       },
       "geometry": {
         "type": "Point",
@@ -410,8 +390,7 @@
         "index_touristique": 38,
         "nombre habitants": "~2,500",
         "nombre touristes par an": "~15,000",
-        "nombre nuit\u00e9es par an": "~30,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~30,000"
       },
       "geometry": {
         "type": "Point",
@@ -430,8 +409,7 @@
         "index_touristique": 3,
         "nombre habitants": "~10,000",
         "nombre touristes par an": "~300,000",
-        "nombre nuit\u00e9es par an": "~600,000",
-        "remarque": "Station de ski et de golf de luxe"
+        "nombre nuit\u00e9es par an": "~600,000"
       },
       "geometry": {
         "type": "Point",
@@ -450,8 +428,7 @@
         "index_touristique": 5,
         "nombre habitants": "~1,400",
         "nombre touristes par an": "~100,000",
-        "nombre nuit\u00e9es par an": "~200,000",
-        "remarque": "Stations thermales"
+        "nombre nuit\u00e9es par an": "~200,000"
       },
       "geometry": {
         "type": "Point",
@@ -470,8 +447,7 @@
         "index_touristique": 39,
         "nombre habitants": "~3,000",
         "nombre touristes par an": "~20,000",
-        "nombre nuit\u00e9es par an": "~40,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~40,000"
       },
       "geometry": {
         "type": "Point",
@@ -490,8 +466,7 @@
         "index_touristique": 40,
         "nombre habitants": "~6,000",
         "nombre touristes par an": "~25,000",
-        "nombre nuit\u00e9es par an": "~50,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~50,000"
       },
       "geometry": {
         "type": "Point",
@@ -510,8 +485,7 @@
         "index_touristique": 41,
         "nombre habitants": "~2,000",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -530,8 +504,7 @@
         "index_touristique": 17,
         "nombre habitants": "~1,600",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": "Village pittoresque"
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -550,8 +523,7 @@
         "index_touristique": 52,
         "nombre habitants": "~9,500",
         "nombre touristes par an": "~50,000",
-        "nombre nuit\u00e9es par an": "~100,000",
-        "remarque": "En partie dans le canton de Vaud"
+        "nombre nuit\u00e9es par an": "~100,000"
       },
       "geometry": {
         "type": "Point",
@@ -570,8 +542,7 @@
         "index_touristique": 1,
         "nombre habitants": "~5,800",
         "nombre touristes par an": "~2,000,000",
-        "nombre nuit\u00e9es par an": "~4,000,000",
-        "remarque": "Station de ski, Cervin (Matterhorn)"
+        "nombre nuit\u00e9es par an": "~4,000,000"
       },
       "geometry": {
         "type": "Point",
@@ -590,8 +561,7 @@
         "index_touristique": 2,
         "nombre habitants": "~3,000",
         "nombre touristes par an": "~800,000",
-        "nombre nuit\u00e9es par an": "~1,600,000",
-        "remarque": "Station de ski de renomm\u00e9e mondiale"
+        "nombre nuit\u00e9es par an": "~1,600,000"
       },
       "geometry": {
         "type": "Point",
@@ -610,8 +580,7 @@
         "index_touristique": 4,
         "nombre habitants": "~1,600",
         "nombre touristes par an": "~300,000",
-        "nombre nuit\u00e9es par an": "~600,000",
-        "remarque": "Station de ski, paysages glaciaires"
+        "nombre nuit\u00e9es par an": "~600,000"
       },
       "geometry": {
         "type": "Point",
@@ -630,8 +599,7 @@
         "index_touristique": 7,
         "nombre habitants": "~500",
         "nombre touristes par an": "~50,000",
-        "nombre nuit\u00e9es par an": "~100,000",
-        "remarque": "Village alpin traditionnel"
+        "nombre nuit\u00e9es par an": "~100,000"
       },
       "geometry": {
         "type": "Point",
@@ -650,8 +618,7 @@
         "index_touristique": 8,
         "nombre habitants": "~350",
         "nombre touristes par an": "~20,000",
-        "nombre nuit\u00e9es par an": "~40,000",
-        "remarque": "Observatoire astronomique, ski"
+        "nombre nuit\u00e9es par an": "~40,000"
       },
       "geometry": {
         "type": "Point",
@@ -670,8 +637,7 @@
         "index_touristique": 9,
         "nombre habitants": "~200",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": "Village alpin, activit\u00e9s nautiques"
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -690,8 +656,7 @@
         "index_touristique": 10,
         "nombre habitants": "~1,200",
         "nombre touristes par an": "~100,000",
-        "nombre nuit\u00e9es par an": "~200,000",
-        "remarque": "Glacier 3000, ski en \u00e9t\u00e9"
+        "nombre nuit\u00e9es par an": "~200,000"
       },
       "geometry": {
         "type": "Point",
@@ -710,8 +675,7 @@
         "index_touristique": 42,
         "nombre habitants": "~2,400",
         "nombre touristes par an": "~15,000",
-        "nombre nuit\u00e9es par an": "~30,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~30,000"
       },
       "geometry": {
         "type": "Point",
@@ -730,8 +694,7 @@
         "index_touristique": 43,
         "nombre habitants": "~500",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -750,8 +713,7 @@
         "index_touristique": 44,
         "nombre habitants": "~1,100",
         "nombre touristes par an": "~15,000",
-        "nombre nuit\u00e9es par an": "~30,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~30,000"
       },
       "geometry": {
         "type": "Point",
@@ -770,8 +732,7 @@
         "index_touristique": 6,
         "nombre habitants": "~6,500",
         "nombre touristes par an": "~150,000",
-        "nombre nuit\u00e9es par an": "~300,000",
-        "remarque": "Domaine skiable des 4 Vall\u00e9es"
+        "nombre nuit\u00e9es par an": "~300,000"
       },
       "geometry": {
         "type": "Point",
@@ -790,8 +751,7 @@
         "index_touristique": 45,
         "nombre habitants": "~1,000",
         "nombre touristes par an": "~20,000",
-        "nombre nuit\u00e9es par an": "~40,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~40,000"
       },
       "geometry": {
         "type": "Point",
@@ -810,8 +770,7 @@
         "index_touristique": 46,
         "nombre habitants": "~400",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -830,8 +789,7 @@
         "index_touristique": 47,
         "nombre habitants": "~500",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -850,8 +808,7 @@
         "index_touristique": 48,
         "nombre habitants": "~1,200",
         "nombre touristes par an": "~20,000",
-        "nombre nuit\u00e9es par an": "~40,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~40,000"
       },
       "geometry": {
         "type": "Point",
@@ -870,8 +827,7 @@
         "index_touristique": 49,
         "nombre habitants": "~700",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -890,8 +846,7 @@
         "index_touristique": 50,
         "nombre habitants": "~1,200",
         "nombre touristes par an": "~15,000",
-        "nombre nuit\u00e9es par an": "~30,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~30,000"
       },
       "geometry": {
         "type": "Point",
@@ -910,8 +865,7 @@
         "index_touristique": 15,
         "nombre habitants": "~1,000",
         "nombre touristes par an": "~100,000",
-        "nombre nuit\u00e9es par an": "~200,000",
-        "remarque": "Randonn\u00e9es, excursions en montagne"
+        "nombre nuit\u00e9es par an": "~200,000"
       },
       "geometry": {
         "type": "Point",
@@ -930,8 +884,7 @@
         "index_touristique": 16,
         "nombre habitants": "~1,400",
         "nombre touristes par an": "~20,000",
-        "nombre nuit\u00e9es par an": "~40,000",
-        "remarque": "Vignobles les plus \u00e9lev\u00e9s d'Europe"
+        "nombre nuit\u00e9es par an": "~40,000"
       },
       "geometry": {
         "type": "Point",
@@ -950,8 +903,7 @@
         "index_touristique": 30,
         "nombre habitants": "~2,500",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": NaN
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -970,8 +922,7 @@
         "index_touristique": 20,
         "nombre habitants": "~800",
         "nombre touristes par an": "~20,000",
-        "nombre nuit\u00e9es par an": "~40,000",
-        "remarque": "Station de ski, bains thermaux"
+        "nombre nuit\u00e9es par an": "~40,000"
       },
       "geometry": {
         "type": "Point",
@@ -990,8 +941,7 @@
         "index_touristique": 19,
         "nombre habitants": "~700",
         "nombre touristes par an": "~10,000",
-        "nombre nuit\u00e9es par an": "~20,000",
-        "remarque": "Domaine skiable des Portes du Soleil"
+        "nombre nuit\u00e9es par an": "~20,000"
       },
       "geometry": {
         "type": "Point",
@@ -1010,8 +960,7 @@
         "index_touristique": 18,
         "nombre habitants": "~900",
         "nombre touristes par an": "~20,000",
-        "nombre nuit\u00e9es par an": "~40,000",
-        "remarque": "Station thermale et de ski"
+        "nombre nuit\u00e9es par an": "~40,000"
       },
       "geometry": {
         "type": "Point",
@@ -1030,8 +979,7 @@
         "index_touristique": 11,
         "nombre habitants": "~2,400",
         "nombre touristes par an": "~200,000",
-        "nombre nuit\u00e9es par an": "~400,000",
-        "remarque": "Villages de Riederalp, Bettmeralp, Fiesch, glacier d'Aletsch"
+        "nombre nuit\u00e9es par an": "~400,000"
       },
       "geometry": {
         "type": "Point",
